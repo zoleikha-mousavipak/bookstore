@@ -1,0 +1,52 @@
+*{
+    font-family: Tahoma;
+    color: darkslateblue;
+}
+a{
+    text-decoration:none;
+}
+a:visited, a{
+    color: darkblue;
+}
+a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+
+body{
+    background-color: bisque;
+
+}
+
+body {
+    margin: 0px;
+    padding: 100px;
+}
+
+header {
+    background-color: blanchedalmond;
+    margin: 0;
+    padding: 0;
+}
+
+.rtl{
+    direction: rtl;
+}
+
+.center{
+    text-align: center;
+}
+
+#user-bar{
+    padding: 5px 10px;
+}
+
+#bgImage {
+    background: url(../img/book2.jpg) no-repeat top center;
+
+}
+
+.errorlist{
+    color: red;
+}

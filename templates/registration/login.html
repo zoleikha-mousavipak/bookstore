@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% load i18n %}
+
+{% block title %} Login {% endblock %}
+{% block content %}
+<div>
+    <h2>Login page</h2>
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+        <button type="submit">{% trans 'login' %}</button>
+    </form>
+</div>
+{% endblock %}

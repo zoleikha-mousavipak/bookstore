@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+{%  load static %}
+
+{% block title %} Bookstore: List Books {% endblock %}
+{% block section_title %} All Books {% endblock %}
+{% block content %}
+
+    {% for book in books %}
+          <p class=""><a href="{% url 'shop:book' book.pk %}">{{ book }}</a></p>
+    {% endfor %}
+
+{% endblock %}

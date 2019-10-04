@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+{%  load static %}
+
+{% block title %} Bookstore: Book Detail {% endblock %}
+{% block section_title %}Book Details{% endblock %}
+
+{% block content %}
+    {{ book }}<br>
+    {% if perms.shop.view_book %}
+    <img src="{% if book.cover %}{{ book.cover.url }}{% else %}{% static 'img/noimage.png' %}{% endif %}" alt="{{ book.title }}">
+    {% endif %}
+{% endblock %}
